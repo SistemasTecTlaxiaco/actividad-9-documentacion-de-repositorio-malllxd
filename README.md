@@ -39,7 +39,30 @@ Smart Contract
 Lenguaje: Rust
 ```
 
+## 
+Smart Contract
+* **Lenguaje:** Rust (Soroban SDK).
 
+* **Función principal:** Gestión del registro de iniciativas y control de fondos.
+
+* **Operaciones:**
+
+         * Registro de iniciativas ecológicas.
+
+         * Consulta de proyectos activos.
+
+## API Backend
+* **Tecnología:** Node.js con Express.
+
+* **Función:** Puente de comunicación entre la interfaz de usuario y la red Stellar.
+
+* **Responsabilidades:**
+
+        * Firma y envío de transacciones a la red.
+
+        * Lectura de datos en tiempo real desde los contratos.
+
+        * Tratamiento de errores de red y validación de parámetros.
 ## Función principal: Gestión de datos y fondos en la blockchain.
 
 Operaciones: Registro de iniciativas y consulta de proyectos ecológicos.
@@ -111,6 +134,15 @@ JSON
   "proyectos": ["Reforestación Mixteca"]
 }
 
+```
+
+## Obtener Proyectos
+GET /proyectos
+Respuesta:
+```{
+  "success": true,
+  "proyectos": ["Reforestación Mixteca", "Limpieza de Ríos"]
+}
 ```
 ## Pruebas de Integración
 Se realizaron pruebas completas verificando:
