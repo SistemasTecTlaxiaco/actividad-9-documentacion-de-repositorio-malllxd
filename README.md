@@ -27,7 +27,6 @@ Desarrollar una plataforma descentralizada que gestione donaciones para proyecto
 * Desplegar el contrato en la red Stellar Testnet para validar su funcionamiento en un entorno real.
 * Garantizar la seguridad de las transacciones mediante el uso de llaves privadas y variables de entorno.
 * Realizar pruebas de integración completas desde la API Backend hasta la red blockchain.
-
 ## Arquitectura del Proyecto
 
 ```text
@@ -38,6 +37,8 @@ GreenTech/
 
 Smart Contract
 Lenguaje: Rust
+
+
 
 Función principal: Gestión de datos y fondos en la blockchain.
 
@@ -124,4 +125,9 @@ Implementación de manejo de errores con try/catch y asincronía.
 
 Conclusión
 GreenTech Hub representa una solución moderna basada en Web3 que demuestra cómo los contratos inteligentes pueden transformar la filantropía ambiental, eliminando la opacidad y fortaleciendo la confianza entre donantes y proyectos mediante sistemas descentralizados.
+
+
+
+
+
 
