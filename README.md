@@ -53,24 +53,26 @@ Responsabilidades: Envío de transacciones, lectura de datos del contrato y mane
 
 ## Instalación del Proyecto
 1. Clonar repositorio
-Bash
+```Bash
 git clone [https://github.com/GerardoNR/GreenTech.git](https://github.com/GerardoNR/GreenTech.git)
 cd GreenTech
+```
 2. Compilar contrato
 Bash
-cd greentech-contrato
+```cd greentech-contrato
 cargo build --target wasm32v1-none --release
+```
 3. Desplegar contrato en TestNet
-Bash
+```Bash
 soroban contract deploy \
 --wasm target/wasm32v1-none/release/greentech_contrato.wasm \
 --source default \
 --network testnet
 Contract ID generado:
 CC7X... (Pega aquí el ID generado por la terminal)
-
+```
 4. Configurar API
-Bash
+```Bash
 cd ../greentech-api
 npm install
 Archivo .env:
@@ -78,8 +80,9 @@ Archivo .env:
 Fragmento de código
 SECRET_KEY=TU_SECRET_KEY
 CONTRACT_ID=TU_CONTRACT_ID_GENERADO
+```
 5. Ejecutar API
-Bash
+```Bash
 node index.js
 Servidor ejecutándose en: http://localhost:3000
 
@@ -107,7 +110,9 @@ JSON
   "success": true,
   "proyectos": ["Reforestación Mixteca"]
 }
-Pruebas de Integración
+
+```
+## Pruebas de Integración
 Se realizaron pruebas completas verificando:
 
 Registro exitoso en la blockchain de Stellar.
@@ -116,14 +121,14 @@ Generación y validación del hash de transacción.
 
 Lectura de datos persistentes desde el Smart Contract.
 
-Seguridad
+## Seguridad
 Uso de variables de entorno para proteger llaves privadas.
 
 No exposición de información sensible en el código fuente.
 
 Implementación de manejo de errores con try/catch y asincronía.
 
-Conclusión
+## Conclusión
 GreenTech Hub representa una solución moderna basada en Web3 que demuestra cómo los contratos inteligentes pueden transformar la filantropía ambiental, eliminando la opacidad y fortaleciendo la confianza entre donantes y proyectos mediante sistemas descentralizados.
 
 
