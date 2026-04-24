@@ -37,10 +37,10 @@ GreenTech/
 
 Smart Contract
 Lenguaje: Rust
+```
 
 
-
-Función principal: Gestión de datos y fondos en la blockchain.
+## Función principal: Gestión de datos y fondos en la blockchain.
 
 Operaciones: Registro de iniciativas y consulta de proyectos ecológicos.
 
@@ -51,7 +51,7 @@ Función: Intermediario entre el cliente y la blockchain.
 
 Responsabilidades: Envío de transacciones, lectura de datos del contrato y manejo de errores.
 
-Instalación del Proyecto
+## Instalación del Proyecto
 1. Clonar repositorio
 Bash
 git clone [https://github.com/GerardoNR/GreenTech.git](https://github.com/GerardoNR/GreenTech.git)
